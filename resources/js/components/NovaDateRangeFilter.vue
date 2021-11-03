@@ -19,6 +19,7 @@
 </template>
 <script>
     import flatpickr from "flatpickr";
+    import { Russian } from "flatpickr/dist/l10n/ru.js"
     import "../../sass/template-modified.scss";
 
     export default {
@@ -45,7 +46,7 @@
                         this.filter.currentValue[0],
                         this.dateFormat
                     ),
-                    this.dateFormat
+                    this.dateFormat,
                 );
             },
             endDate() {
@@ -112,6 +113,7 @@
             });
             this.$nextTick(() => {
                 this.flatpickr = flatpickr(this.$refs.datePicker, {
+                    localize: Russian,
                     enableTime: this.enableTime,
                     enableSeconds: this.enableSeconds,
                     onClose: this.handleChange,
@@ -126,8 +128,7 @@
                         );
                     },
                     locale: {
-                        rangeSeparator: ` ${this.separator} `,
-                        firstDayOfWeek: this.firstDayOfWeek,
+                        Russian
                     },
                 });
             });
