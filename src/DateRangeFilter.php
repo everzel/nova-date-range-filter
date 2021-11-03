@@ -94,6 +94,6 @@ class DateRangeFilter extends Filter
      */
     public function name()
     {
-        return __('Filter By ') . $this->name;
+        return __('Фильтровать по ') . $this->name;
     }
 }
