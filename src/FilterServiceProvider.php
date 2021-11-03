@@ -1,6 +1,6 @@
 <?php
 
-namespace Marshmallow\Filters;
+namespace Everzel\Filters;
 
 use Laravel\Nova\Nova;
 use Laravel\Nova\Events\ServingNova;

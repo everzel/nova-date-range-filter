@@ -1,6 +1,6 @@
 <?php
 
-namespace Marshmallow\Filters;
+namespace Everzel\Filters;
 
 use Carbon\Carbon;
 use Illuminate\Http\Request;
