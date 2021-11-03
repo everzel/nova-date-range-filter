@@ -13,13 +13,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Marshmallow\\Filters\\": "src/"
+            "Everzel\\Filters\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Marshmallow\\Filters\\FilterServiceProvider"
+                "Everzel\\Filters\\FilterServiceProvider"
             ]
         }
     },
